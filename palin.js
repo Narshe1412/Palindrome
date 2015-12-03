@@ -1,11 +1,6 @@
 function palindrome(str) {
   // Good luck!
-  if (str.toLowerCase().replace(/[\W_]/g,'') === str.split("").reverse().join("").toLowerCase().replace(/[\W_]/g,'')){
-    return true;  
-  } else {
-    return false;
-  }
-  
+  return str.toLowerCase().replace(/[\W_]/g,'') === str.split("").reverse().join("").toLowerCase().replace(/[\W_]/g,'');
 }
 
 
